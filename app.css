@@ -68,6 +68,24 @@ body.in-app {
   border-radius: 10px;
 }
 
+.ww-top-actions { display: flex; align-items: center; gap: 0.45rem; flex-shrink: 0; }
+.ww-988-top {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.6rem;
+  height: 2.15rem;
+  padding: 0 0.7rem;
+  border-radius: var(--radius-pill);
+  background: var(--crisis-solid);
+  color: #fff;
+  font-weight: 750;
+  font-size: 0.95rem;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+.ww-988-top:hover { color: #fff; filter: brightness(1.05); }
+
 .ww-top-nav {
   display: none;
   gap: 0.15rem;

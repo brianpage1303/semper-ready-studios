@@ -431,13 +431,15 @@ function renderShell(activeTab) {
           <img src="assets/app-icon.png" width="40" height="40" alt="">
           <span>Warrior Wayfinder™</span>
         </a>
-        <a class="btn btn-primary btn-sm" href="#/download-anchor" data-to-download>Download</a>
+        <div class="ww-top-actions">
+          <a class="ww-988-top" href="#/crisis" aria-label="Crisis help: Call 988, then press 1">988</a>
+          <a class="btn btn-primary btn-sm" href="#/download-anchor" data-to-download>Download</a>
+        </div>
       </div>
       <nav class="ww-top-nav" aria-label="App">${tabs}</nav>
     </header>
     <div id="app-main" class="ww-main"></div>
     <nav class="ww-tabs" aria-label="Tabs">${tabs}</nav>
-    <a class="ww-fab" href="#/crisis" aria-label="Crisis help: Call 988, then press 1"><span>988</span><small>Crisis</small></a>
   `;
   const dl = app.querySelector('[data-to-download]');
   if (dl) {
