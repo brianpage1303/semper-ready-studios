@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Warrior Wayfinder™</title>
+  <meta name="description" content="Privacy policy for Warrior Wayfinder™, the free Android app from Semper Ready Studios. Effective November 21, 2026.">
+  <meta name="theme-color" content="#FAF5EC">
+  <link rel="icon" href="assets/app-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="assets/app-icon.png" width="512" height="512" alt="">
+        <span class="brand-name">
+          <strong>Warrior Wayfinder™</strong>
+          <span>Free Android app</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="index.html#orgs">Orgs</a>
+        <a href="index.html#events">Events</a>
+        <a href="index.html#browse">Browse</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+      </nav>
+      <a class="btn btn-primary btn-sm header-cta" href="https://play.google.com/apps/internaltest/4701648640906943757" rel="noopener noreferrer">Download for Android</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="policy-hero">
+      <div class="wrap">
+        <p class="eyebrow">Warrior Wayfinder™</p>
+        <h1>Privacy policy</h1>
+        <p class="muted">Effective date: November 21, 2026 · Android package <code>org.homefrontreads.app</code></p>
+      </div>
+    </header>
+
+    <div class="wrap policy-layout">
+      <nav class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <ol>
+          <li><a href="#who">Who we are</a></li>
+          <li><a href="#leaves">What leaves your phone</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#on-device">Stored on your device</a></li>
+          <li><a href="#not-collected">What we don’t collect</a></li>
+          <li><a href="#third-parties">Third-party links</a></li>
+          <li><a href="#children">Children</a></li>
+          <li><a href="#deletion">Keeping and deleting</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#changes">Changes</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ol>
+      </nav>
+
+      <article class="policy">
+        <p class="lead">This policy explains, in plain English, what Warrior Wayfinder™ does with your information. The short version: there are no accounts and no ads, we don’t sell anything about you, and almost everything you put into the app stays on your phone.</p>
+        <p class="updated">This policy covers the current Android version of Warrior Wayfinder™ (version 1.0.8, Google Play package <code>org.homefrontreads.app</code>). An iPhone version is in progress and is not available yet. If a future version handles information differently, this policy will be updated before that version is released.</p>
+
+        <h2 id="who">1. Who we are</h2>
+        <p>Warrior Wayfinder™ is a free app for veterans and their families. It is built and run by one person, <strong>Brian Page</strong>, an individual developer in South Carolina, USA, under the name Semper Ready Studios. When this policy says “we,” “us,” or “the developer,” it means Brian.</p>
+        <p>Semper Ready Studios is independent. It is not affiliated with, endorsed by, or part of the U.S. Department of Defense, the U.S. Marine Corps, or any other government agency.</p>
+        <p>Questions? Email <a href="mailto:brianpage13031582@gmail.com">brianpage13031582@gmail.com</a>.</p>
+
+        <h2 id="leaves">2. What leaves your phone</h2>
+        <p>Warrior Wayfinder™ does not have accounts, sign-ins, or a server of its own that stores information about you. From the app’s own code, here is what leaves your phone, and why:</p>
+        <ul>
+          <li>
+            <p><strong>Downloading the events and organizations list (GitHub).</strong> The app checks for an updated public list of events, organizations, and VA events hosted in the public GitHub repository <code>brianpage1303/warrior-wayfinder-feed</code>. It checks on launch, when you return to the app, and once if the app stays open past midnight in the America/New_York time zone. If the list has already been downloaded today (Eastern Time), it does not download again unless you pull down to refresh.</p>
+            <p>Nothing about you is attached to that request — no name, email, location, ZIP code, or device identifier. The request does include a date (so you get that day’s copy) and, when you pull to refresh, a timestamp (so a cached copy is not reused). Like any website request, GitHub can see your phone’s IP address and basic technical details of the request. See <a href="#third-parties">Third-party links and services</a>.</p>
+          </li>
+          <li>
+            <p><strong>Finding your area, if you choose “Use my location.”</strong> Your phone’s built-in location services are used to turn your approximate position into a state, ZIP code, and town name. The app itself does not send your coordinates to the developer or to any server we run. See the next section.</p>
+          </li>
+        </ul>
+        <p>That’s it from the app’s own features. We don’t collect your name, email, phone number, contacts, photos, health information, or service records. If you later email us, or tap a link that opens another website, that is separate from the app’s own data handling and is described below.</p>
+
+        <h2 id="location">3. Location</h2>
+        <p>Location is optional. You can always type a ZIP code or pick your state instead.</p>
+        <ul>
+          <li><strong>When we ask.</strong> The first time you open the app, you’ll see a “Show what’s near you” card with two choices: “Use my location” or “Enter it myself.” Android only asks for location permission if you tap “Use my location.”</li>
+          <li><strong>Approximate only.</strong> The app asks for approximate (coarse) location only. Precise location is blocked in the app’s configuration. The app never uses location in the background, and it never runs a location foreground service. Location is only checked while the app is open on your screen.</li>
+          <li><strong>When it’s checked.</strong> If you chose “Use my location,” the app quietly re-checks your approximate area each time you open the app or come back to it, so events stay close to where you are if you travel. It never pops up a permission request on its own.</li>
+          <li><strong>What happens with it.</strong> Your phone’s approximate position is turned into a state, ZIP code, and town name (for example, “Greenville, SC”) using Android’s built-in address lookup. On many phones that lookup is provided by Google as part of Android, so Google may process the approximate position under its own privacy policy in order to return an address. The app itself never sends your position to the developer or to any server we run.</li>
+          <li><strong>What’s kept.</strong> Your approximate coordinates are kept in the app’s memory only while it’s running, to sort events by distance. They are <strong>never saved on your phone and never sent to us.</strong> The app does save your state, ZIP code, and town name on your phone so it remembers your area next time, along with whether you chose location or typing.</li>
+          <li><strong>If you type a ZIP instead.</strong> Your ZIP code is saved on your phone. The app finds the middle of that ZIP area using a U.S. Census ZIP table built into the app, so it works offline. That lookup never leaves your phone.</li>
+          <li><strong>Changing your mind.</strong> You can switch to typing a ZIP or picking a state at any time in the app, and you can turn off location for Warrior Wayfinder™ in your phone’s Settings app.</li>
+        </ul>
+
+        <h2 id="on-device">4. Information stored on your device</h2>
+        <p>The app saves these things in its own private storage on your phone. They are not sent to us:</p>
+        <ul>
+          <li><strong>Your area:</strong> the state or Upstate South Carolina area you picked, your ZIP code (if you entered one, or if location provided one that the app keeps), your town name (if you use location), and whether you chose location or typing.</li>
+          <li><strong>Saved items:</strong> the articles and organizations you saved (favorited).</li>
+          <li><strong>Look and feel:</strong> light or dark mode and your color theme.</li>
+          <li><strong>Downloaded lists:</strong> a copy of the latest events, organizations, and VA events list, plus the Eastern Time date of the last successful update, so the app works without a signal.</li>
+          <li><strong>Events you submit:</strong> If you use “Submit an event,” what you type (title, organization, date, time, place, description, an optional contact email, and, when asked, an Upstate South Carolina area) is saved <strong>on your phone only</strong> and marked “Pending.” It is not emailed or sent anywhere.</li>
+          <li><strong>Peer Talk interest:</strong> Peer Talk is “coming soon.” If you fill in the interest form, your topics and the optional name, email, and note you type are saved <strong>on your phone only</strong>. They are not sent to us or anyone else.</li>
+        </ul>
+
+        <h2 id="not-collected">5. Information we don’t collect</h2>
+        <ul>
+          <li>No accounts, sign-ins, or passwords.</li>
+          <li>No advertising and no advertising ID. We don’t show ads.</li>
+          <li>No selling or sharing of your information for advertising.</li>
+          <li>No precise location and no background location.</li>
+          <li>No third-party analytics SDK. As of version 1.0.5, the Expo EAS Insights launch counter was removed. The app’s own code still has placeholders for anonymous screen and button names, but those placeholders send nothing and are not connected to any service.</li>
+          <li>No crash-reporting service (for example, no Sentry, Firebase, or Crashlytics).</li>
+          <li>No payments inside the app. Donations happen on the organizations’ own websites.</li>
+          <li>No access to your contacts, photos, camera, microphone, calendar, or files.</li>
+          <li>No health, military service, or benefits records.</li>
+        </ul>
+
+        <h2 id="third-parties">6. Third-party links and services</h2>
+        <p>Warrior Wayfinder™ connects you to other people’s services. When you use them, their privacy policies apply, not this one.</p>
+        <ul>
+          <li><strong>Google Play.</strong> You download and update the app through Google Play, which Google runs under its own privacy policy. Android’s location and address lookup services, which may be provided by Google, are part of your phone and are also covered by Google’s policies.</li>
+          <li><strong>GitHub (events and organizations list).</strong> As described in section 2, the app downloads a public file from GitHub. No location, ZIP code, or personal information is sent with that request. GitHub’s privacy statement: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement</a>.</li>
+          <li><strong>Websites we link to.</strong> The app links to outside websites, such as VA.gov, the Veterans Crisis Line website, veteran organizations, and search tools like the VA facility locator, the VFW post finder, and the American Job Center finder. Some of these links include your ZIP code in the web address so the site opens near you. That ZIP is only shared when you tap the link. Once you leave the app, that website’s privacy policy applies.</li>
+          <li><strong>Donation pages.</strong> The “Donate” screen sends you to the websites of South Carolina partner organizations. Your gift goes straight to that organization through its own site. Warrior Wayfinder™ never sees or handles your payment details.</li>
+          <li><strong>Crisis line and phone calls.</strong> Buttons that say “Call 988, then press 1” open your phone’s dialer with 988 filled in. The app also shows how to text the Veterans Crisis Line (838255) and links to its website. Calls and texts go through your phone carrier and the crisis line, not through us. The app does not record or report your calls or texts.</li>
+          <li><strong>Sharing.</strong> If you tap “Share,” your phone’s normal share menu opens, and you choose where it goes.</li>
+        </ul>
+
+        <h2 id="children">7. Children</h2>
+        <p>Warrior Wayfinder™ is made for veterans, service members, and their families. It is not directed to children under 13, and we don’t knowingly collect personal information from children. If you believe a child has sent us personal information, email us and we’ll delete it.</p>
+
+        <h2 id="deletion">8. Keeping and deleting your information</h2>
+        <ul>
+          <li><strong>On your phone.</strong> Everything listed in section 4 stays on your phone until you change or remove it. You can unsave items, change your area, or switch location off in the app. To erase all of it at once, either uninstall the app, or go to Settings &gt; Apps &gt; Warrior Wayfinder™ &gt; Storage &gt; Clear storage (wording varies by phone).</li>
+          <li><strong>On our side.</strong> We don’t run a server and we don’t keep a database of users, so there is no account or profile to delete with us. If you have emailed us, you can ask us to delete that email conversation.</li>
+          <li><strong>GitHub.</strong> GitHub keeps its own technical records, such as request logs, under its own policy. Those requests are not tied to your name.</li>
+        </ul>
+
+        <h2 id="security">9. Security</h2>
+        <p>The events and organizations list is downloaded over an encrypted (HTTPS) connection. What the app saves on your phone is kept in the app’s private storage, which Android keeps separate from other apps. The app does not add its own extra encryption on top of that, so protect your phone with a screen lock. Because we keep almost nothing about you, there is very little that could be exposed on our end. No system is perfectly secure, but we’ve kept things simple on purpose.</p>
+
+        <h2 id="changes">10. Changes to this policy</h2>
+        <p>If the app changes how it handles information, we’ll update this policy and the “Effective date” at the top. If a future version would send any new kind of information off your phone, we’ll update this policy before that version is released, and where the law or Google Play requires, ask for your permission first.</p>
+
+        <h2 id="contact">11. Contact us</h2>
+        <p>
+          Brian Page<br>
+          Semper Ready Studios / Warrior Wayfinder™<br>
+          South Carolina, USA<br>
+          Email: <a href="mailto:brianpage13031582@gmail.com">brianpage13031582@gmail.com</a>
+        </p>
+        <p><em>If you are in crisis, please don’t wait for an email reply. Call 988 and press 1, text 838255, or call 911 in an emergency.</em></p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-brand">Warrior Wayfinder™ · Semper Ready Studios</div>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="index.html#download">Download</a>
+        <a href="privacy.html">Privacy policy</a>
+        <a href="mailto:brianpage13031582@gmail.com">Email</a>
+      </nav>
+      <p class="foot-disc">Semper Ready Studios is an independent, veteran-built studio in Seneca, South Carolina. It is not affiliated with, endorsed by, or part of the U.S. Department of Defense, the U.S. Marine Corps, or any other government agency.</p>
+      <p class="crisis-line">Veterans Crisis Line: call 988, then press 1 · text 838255 · <a href="https://www.veteranscrisisline.net/" rel="noopener noreferrer">veteranscrisisline.net</a></p>
+    </div>
+  </footer>
+</body>
+</html>
