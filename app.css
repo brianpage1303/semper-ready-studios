@@ -358,7 +358,8 @@ a.ww-cal-day.is-on { background: var(--primary); color: var(--on-primary); }
 
 .ww-fab {
   position: fixed;
-  right: 1rem;
+  left: 1rem;
+  right: auto;
   bottom: calc(4.6rem + env(safe-area-inset-bottom));
   z-index: 31;
   width: 3.5rem;
@@ -386,11 +387,19 @@ a.feature-open {
   text-decoration: none;
 }
 
+#app-root[data-route="crisis"] .ww-fab,
+#app-root[data-route="about"] .ww-fab { display: none; }
+
+@media (max-width: 480px) {
+  .ww-search { flex-wrap: wrap; }
+  .ww-search .btn { margin-left: auto; }
+}
+
 @media (min-width: 800px) {
   .ww-tabs { display: none; }
   .ww-top-nav { display: flex; }
   .ww-main { padding-bottom: 3rem; }
-  .ww-fab { bottom: 1.5rem; }
+  .ww-fab { left: auto; right: 1.5rem; bottom: 1.5rem; }
   .ww-top-nav .ww-tab { flex-direction: row; gap: 0.4rem; font-size: 0.95rem; padding: 0.45rem 0.6rem; border-radius: var(--radius-pill); }
   .ww-top-nav .ww-tab.is-on { background: var(--accent-soft); }
 }

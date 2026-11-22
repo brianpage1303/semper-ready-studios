@@ -896,7 +896,7 @@ function renderBrowse(parsed) {
     <h1 class="ww-h1">Browse topics</h1>
     <form class="ww-search" id="browse-search">
       <label class="visually-hidden" for="browse-q">Search orgs, events, and short reads</label>
-      <input class="ww-input" id="browse-q" type="search" placeholder="Search orgs, events, and short reads" value="${esc(q)}" autofocus>
+      <input class="ww-input" id="browse-q" type="search" placeholder="Search orgs, events, and reads" value="${esc(q)}" autofocus>
       <button class="btn btn-primary btn-sm" type="submit">Search</button>
     </form>
     <div class="ww-chips">
@@ -1111,6 +1111,8 @@ function render() {
     return;
   }
   if (!renderShell(tab)) return;
+  const root = byId('app-root');
+  if (root) root.dataset.route = first;
   const mainNeeded = byId('app-main');
   if (!mainNeeded) return;
   switch (first) {
