@@ -9,10 +9,17 @@
   <link rel="icon" href="assets/app-icon.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/app-icon.png">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="app.css">
+  <script>
+    if (/^#\/(home|browse|orgs|events|saved|place|crisis|about|peer-talk|donate|article)\b/.test(location.hash)) {
+      document.documentElement.classList.add('boot-app');
+    }
+  </script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
+  <div id="marketing">
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="index.html">
@@ -24,9 +31,9 @@
       </a>
       <nav class="nav" aria-label="Primary">
         <a href="#home" aria-current="page">Home</a>
-        <a href="#orgs">Orgs</a>
-        <a href="#events">Events</a>
-        <a href="#browse">Browse</a>
+        <a href="#/orgs">Orgs</a>
+        <a href="#/events">Events</a>
+        <a href="#/browse">Browse</a>
         <a href="#download">Download</a>
       </nav>
       <a class="btn btn-primary btn-sm header-cta" href="https://play.google.com/apps/internaltest/4701648640906943757" rel="noopener noreferrer">Download for Android</a>
@@ -43,9 +50,9 @@
           <p class="lede">Your warm anytime info hub for veterans — short reads, local orgs, events, and next steps. No account needed. Save what helps; come back whenever you need it.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="https://play.google.com/apps/internaltest/4701648640906943757" rel="noopener noreferrer">Download for Android</a>
-            <a class="btn btn-secondary" href="#download">How to join the test</a>
+            <a class="btn btn-secondary" href="#/home">Try it in your browser</a>
           </div>
-          <p class="hero-note">Free on Android. The app is in Google Play internal testing, so email Brian first to be added. iPhone is coming soon.</p>
+          <p class="hero-note">Use the full Warrior Wayfinder™ experience in this browser, or download the free Android app. The app is in Google Play internal testing, so email Brian first to be added. iPhone is coming soon. <a href="#download">How to join the test</a>.</p>
         </div>
         <div class="phone-wrap">
           <div class="phone">
@@ -60,7 +67,7 @@
         <div class="section-head">
           <p class="eyebrow">Inside the app</p>
           <h2 id="features-heading">Everything you need, in one calm place</h2>
-          <p class="muted">The same tabs and tools you will see when you open Warrior Wayfinder™. Built first around Upstate South Carolina, with statewide and national organizations and VA events farther afield.</p>
+          <p class="muted">These are real, usable sections — the same tabs and tools as the Android app. Tap any of them to open Warrior Wayfinder™ in this browser. Built first around Upstate South Carolina, with statewide and national organizations and VA events farther afield.</p>
         </div>
         <ul class="features">
           <li class="feature">
@@ -69,20 +76,23 @@
             </div>
             <h3>Orgs</h3>
             <p>SC and national resources for transitioning veterans. Open a card to visit their website. Star an organization to save it.</p>
+            <a class="feature-open" href="#/orgs">Open Orgs in your browser</a>
           </li>
           <li class="feature" id="events">
             <div class="feature-icon icon-warm" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
             </div>
             <h3>Events</h3>
-            <p>A monthly local calendar of verified listings, plus VA events, sorted by what’s close when a location or ZIP is set. You can submit an event; it stays on your phone as Pending.</p>
+            <p>A monthly local calendar of verified listings, plus VA events, sorted by what’s close when a location or ZIP is set. You can submit an event in the Android app; it stays on your phone as Pending.</p>
+            <a class="feature-open" href="#/events">Open Events in your browser</a>
           </li>
           <li class="feature" id="browse">
             <div class="feature-icon icon-accent" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
             </div>
             <h3>Browse</h3>
-            <p>Short, practical reads on Transition, Jobs, Mental health, Family, Benefits, Housing, Women &amp; families, and stories from vets.</p>
+            <p>Short, practical reads on Transition, Jobs, Mental health, Family, Benefits, Housing, Women &amp; families, and stories from vets. Type in the search box to look across orgs, events, and reads.</p>
+            <a class="feature-open" href="#/browse">Open Browse in your browser</a>
           </li>
           <li class="feature">
             <div class="feature-icon icon-crisis" aria-hidden="true">
@@ -90,20 +100,23 @@
             </div>
             <h3>Crisis help on every screen</h3>
             <p>Call 988, then press 1, or text 838255. A 988 button stays one tap away, and the About screen has the full Veterans Crisis Line card.</p>
+            <a class="feature-open" href="#/crisis">Open crisis help in your browser</a>
           </li>
           <li class="feature">
             <div class="feature-icon icon-accent" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <h3>Your place</h3>
-            <p>Choose “Use my location” or “Enter it myself.” Approximate location only, and only while the app is open. Works in the 50 states and DC. You can change it any time.</p>
+            <p>Choose “Use my location” or enter a ZIP or state yourself. Approximate location only, and only when you ask. Works in the 50 states and DC. You can change it any time.</p>
+            <a class="feature-open" href="#/place">Set your place in your browser</a>
           </li>
           <li class="feature">
             <div class="feature-icon icon-sage" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
             </div>
             <h3>Saved</h3>
-            <p>Star articles and organizations to keep them on this device. Nothing you save is sent to us.</p>
+            <p>Star articles, organizations, and events to keep them on this device. Nothing you save is sent to us.</p>
+            <a class="feature-open" href="#/saved">Open Saved in your browser</a>
           </li>
           <li class="feature">
             <div class="feature-icon icon-warm" aria-hidden="true">
@@ -111,6 +124,7 @@
             </div>
             <h3>Look</h3>
             <p>Five color themes, including the default Cream + Navy, plus light and dark mode. Your choice is saved on this device.</p>
+            <a class="feature-open" href="#/about">Change the look in your browser</a>
           </li>
           <li class="feature">
             <div class="feature-icon icon-accent" aria-hidden="true">
@@ -118,6 +132,7 @@
             </div>
             <h3>Peer Talk</h3>
             <p>Coming soon — an interest signup, not live chat. Crisis help stays one tap away. Anything you type is saved on this device only.</p>
+            <a class="feature-open" href="#/peer-talk">Open Peer Talk in your browser</a>
           </li>
           <li class="feature">
             <div class="feature-icon icon-warm" aria-hidden="true">
@@ -125,6 +140,7 @@
             </div>
             <h3>Support a partner</h3>
             <p>Donate opens the websites of South Carolina partners such as Semper Fi Barn and Upstate Warrior Solution. Warrior Wayfinder™ never handles your payment.</p>
+            <a class="feature-open" href="#/donate">Open Support a partner in your browser</a>
           </li>
         </ul>
       </div>
@@ -216,6 +232,7 @@
             <div class="hero-actions">
               <a class="btn btn-primary" href="https://play.google.com/apps/internaltest/4701648640906943757" rel="noopener noreferrer">Download for Android</a>
               <a class="btn btn-secondary" href="mailto:brianpage13031582@gmail.com">Email Brian to be added</a>
+              <a class="btn btn-secondary" href="#/home">Try it in your browser</a>
             </div>
             <p class="coming-soon" aria-label="iPhone coming soon">iPhone — Coming soon</p>
             <p class="hero-note" style="color:#c9d5e8;margin-top:.85rem">Internal test link · package org.homefrontreads.app · version 1.0.8. This is not the public Play Store listing yet, so this page uses a download button rather than the official Google Play badge.</p>
@@ -249,7 +266,7 @@
           </details>
           <details>
             <summary>What about my data and privacy?</summary>
-            <p>No accounts, no ads, and no personal data sold. Your location stays on your phone. Approximate location is optional; you can type a ZIP or pick a state instead. The app downloads a public events and organizations list from GitHub. Read the full <a href="privacy.html">privacy policy</a>.</p>
+            <p>No accounts, no ads, and no personal data sold. Your location stays on your phone or in this browser. Approximate location is optional; you can type a ZIP or pick a state instead. The app and this website download a public events and organizations list from GitHub. Read the full <a href="privacy.html">privacy policy</a>.</p>
           </details>
           <details>
             <summary>How do I join the Android test?</summary>
@@ -282,9 +299,9 @@
       <div class="foot-brand">Warrior Wayfinder™ · Semper Ready Studios</div>
       <nav class="foot-nav" aria-label="Footer">
         <a href="#home">Home</a>
-        <a href="#orgs">Orgs</a>
-        <a href="#events">Events</a>
-        <a href="#browse">Browse</a>
+        <a href="#/orgs">Orgs</a>
+        <a href="#/events">Events</a>
+        <a href="#/browse">Browse</a>
         <a href="#download">Download</a>
         <a href="privacy.html">Privacy policy</a>
         <a href="mailto:brianpage13031582@gmail.com">Email</a>
@@ -293,5 +310,9 @@
       <p class="crisis-line">Veterans Crisis Line: call 988, then press 1 · text 838255 · <a href="https://www.veteranscrisisline.net/" rel="noopener noreferrer">veteranscrisisline.net</a></p>
     </div>
   </footer>
+  </div>
+
+  <div id="app-root" hidden></div>
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>

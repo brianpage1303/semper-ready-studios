@@ -1,12 +1,16 @@
-# Warrior Wayfinder™ — local preview site
+# Warrior Wayfinder™ — Semper Ready Studios site
 
-Static HTML/CSS landing page for Warrior Wayfinder™, plus its privacy policy, from Semper Ready Studios.
+Static GitHub Pages site for Warrior Wayfinder™, from Semper Ready Studios.
 
-This folder is a local preview only. It has not been published or deployed.
+Live URL: https://brianpage1303.github.io/semper-ready-studios/
 
-- `index.html` — app landing page (theme and wording from the app)
-- `privacy.html` — Warrior Wayfinder™ privacy policy (effective November 21, 2026)
-- `styles.css` — shared stylesheet, matching the app’s Cream + Navy theme
+- `index.html` — marketing landing page plus the in-browser Warrior Wayfinder™ app (hash routes such as `#/orgs`, `#/events`, `#/browse`)
+- `privacy.html` — privacy policy for the Android app and this website (effective November 21, 2026)
+- `styles.css` / `app.css` — Cream + Navy marketing styles and the in-browser app shell
+- `js/` — client-side app (plain ES modules, no build step)
+- `data/` — bundled reads and place lists, a U.S. Census ZIP table, and a public-feed snapshot used if the live GitHub feed cannot be reached
 - `assets/` — app icon, screenshots, install-link QR code, fonts
 
-Open the files in a browser, or serve the folder with any static file server. Ready for GitHub Pages later (relative paths; no build step). Do not deploy until Brian approves.
+The in-browser app prefers the live public feed at `https://raw.githubusercontent.com/brianpage1303/warrior-wayfinder-feed/main/feed.json` and falls back to `data/feed-snapshot.json`. Place, saved items, theme, and Peer Talk interest stay in this browser’s local storage.
+
+Serve the folder with any static file server (needed for ES modules). No build step, no backend, no paid services.

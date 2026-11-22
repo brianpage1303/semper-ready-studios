@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy — Warrior Wayfinder™</title>
-  <meta name="description" content="Privacy policy for Warrior Wayfinder™, the free Android app from Semper Ready Studios. Effective November 21, 2026.">
+  <meta name="description" content="Privacy policy for Warrior Wayfinder™, the free Android app and website from Semper Ready Studios. Effective November 21, 2026.">
   <meta name="theme-color" content="#FAF5EC">
   <link rel="icon" href="assets/app-icon.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/app-icon.png">
@@ -24,9 +24,9 @@
       </a>
       <nav class="nav" aria-label="Primary">
         <a href="index.html">Home</a>
-        <a href="index.html#orgs">Orgs</a>
-        <a href="index.html#events">Events</a>
-        <a href="index.html#browse">Browse</a>
+        <a href="index.html#/orgs">Orgs</a>
+        <a href="index.html#/events">Events</a>
+        <a href="index.html#/browse">Browse</a>
         <a href="privacy.html" aria-current="page">Privacy</a>
       </nav>
       <a class="btn btn-primary btn-sm header-cta" href="https://play.google.com/apps/internaltest/4701648640906943757" rel="noopener noreferrer">Download for Android</a>
@@ -61,8 +61,8 @@
       </nav>
 
       <article class="policy">
-        <p class="lead">This policy explains, in plain English, what Warrior Wayfinder™ does with your information. The short version: there are no accounts and no ads, we don’t sell anything about you, and almost everything you put into the app stays on your phone.</p>
-        <p class="updated">This policy covers the current Android version of Warrior Wayfinder™ (version 1.0.8, Google Play package <code>org.homefrontreads.app</code>). An iPhone version is in progress and is not available yet. If a future version handles information differently, this policy will be updated before that version is released.</p>
+        <p class="lead">This policy explains, in plain English, what Warrior Wayfinder™ does with your information. The short version: there are no accounts and no ads, we don’t sell anything about you, and almost everything you put into the Android app or the in-browser version stays on your device.</p>
+        <p class="updated">This policy covers the current Android version of Warrior Wayfinder™ (version 1.0.8, Google Play package <code>org.homefrontreads.app</code>) and the website at <a href="index.html">https://brianpage1303.github.io/semper-ready-studios/</a>, including the in-browser version of Warrior Wayfinder™. An iPhone version is in progress and is not available yet. If a future version handles information differently, this policy will be updated before that version is released.</p>
 
         <h2 id="who">1. Who we are</h2>
         <p>Warrior Wayfinder™ is a free app for veterans and their families. It is built and run by one person, <strong>Brian Page</strong>, an individual developer in South Carolina, USA, under the name Semper Ready Studios. When this policy says “we,” “us,” or “the developer,” it means Brian.</p>
@@ -70,17 +70,18 @@
         <p>Questions? Email <a href="mailto:brianpage13031582@gmail.com">brianpage13031582@gmail.com</a>.</p>
 
         <h2 id="leaves">2. What leaves your phone</h2>
-        <p>Warrior Wayfinder™ does not have accounts, sign-ins, or a server of its own that stores information about you. From the app’s own code, here is what leaves your phone, and why:</p>
+        <p>Warrior Wayfinder™ does not have accounts, sign-ins, or a server of its own that stores information about you. From the app’s own code, and from the website, here is what leaves your device, and why:</p>
         <ul>
           <li>
             <p><strong>Downloading the events and organizations list (GitHub).</strong> The app checks for an updated public list of events, organizations, and VA events hosted in the public GitHub repository <code>brianpage1303/warrior-wayfinder-feed</code>. It checks on launch, when you return to the app, and once if the app stays open past midnight in the America/New_York time zone. If the list has already been downloaded today (Eastern Time), it does not download again unless you pull down to refresh.</p>
             <p>Nothing about you is attached to that request — no name, email, location, ZIP code, or device identifier. The request does include a date (so you get that day’s copy) and, when you pull to refresh, a timestamp (so a cached copy is not reused). Like any website request, GitHub can see your phone’s IP address and basic technical details of the request. See <a href="#third-parties">Third-party links and services</a>.</p>
+            <p>The in-browser version on this website fetches the same public file, in your browser, from GitHub. If that live file can’t be reached, the site can fall back to a copy of the list stored with the website (a snapshot). That fallback is also just the public list — not information about you.</p>
           </li>
           <li>
             <p><strong>Finding your area, if you choose “Use my location.”</strong> Your phone’s built-in location services are used to turn your approximate position into a state, ZIP code, and town name. The app itself does not send your coordinates to the developer or to any server we run. See the next section.</p>
           </li>
         </ul>
-        <p>That’s it from the app’s own features. We don’t collect your name, email, phone number, contacts, photos, health information, or service records. If you later email us, or tap a link that opens another website, that is separate from the app’s own data handling and is described below.</p>
+        <p>That’s it from the app’s and website’s own features. We don’t collect your name, email, phone number, contacts, photos, health information, or service records. If you later email us, or tap a link that opens another website, that is separate from Warrior Wayfinder™’s own data handling and is described below. Visiting this website, like visiting any site, also lets the host (GitHub Pages) see your IP address and basic technical details of the page request.</p>
 
         <h2 id="location">3. Location</h2>
         <p>Location is optional. You can always type a ZIP code or pick your state instead.</p>
@@ -92,10 +93,11 @@
           <li><strong>What’s kept.</strong> Your approximate coordinates are kept in the app’s memory only while it’s running, to sort events by distance. They are <strong>never saved on your phone and never sent to us.</strong> The app does save your state, ZIP code, and town name on your phone so it remembers your area next time, along with whether you chose location or typing.</li>
           <li><strong>If you type a ZIP instead.</strong> Your ZIP code is saved on your phone. The app finds the middle of that ZIP area using a U.S. Census ZIP table built into the app, so it works offline. That lookup never leaves your phone.</li>
           <li><strong>Changing your mind.</strong> You can switch to typing a ZIP or picking a state at any time in the app, and you can turn off location for Warrior Wayfinder™ in your phone’s Settings app.</li>
+          <li><strong>On this website.</strong> The in-browser version never asks for your location on its own. It only uses the browser’s location if you tap “Use my location,” and your browser will ask for permission first. Your approximate coordinates are then matched to the nearest U.S. Census ZIP area using a table built into the website — on your device, with no online mapping or address service. The website does not look up a town name that way, so it may show a ZIP and state instead. Coordinates stay in the page’s memory only while it is open and are not saved. Your chosen state or ZIP is saved in this browser’s local storage so the site can remember your area next time. You can still type a ZIP or pick a state instead, and you can clear the site’s data in your browser settings.</li>
         </ul>
 
         <h2 id="on-device">4. Information stored on your device</h2>
-        <p>The app saves these things in its own private storage on your phone. They are not sent to us:</p>
+        <p>The Android app saves these things in its own private storage on your phone. They are not sent to us:</p>
         <ul>
           <li><strong>Your area:</strong> the state or Upstate South Carolina area you picked, your ZIP code (if you entered one, or if location provided one that the app keeps), your town name (if you use location), and whether you chose location or typing.</li>
           <li><strong>Saved items:</strong> the articles and organizations you saved (favorited).</li>
@@ -104,6 +106,7 @@
           <li><strong>Events you submit:</strong> If you use “Submit an event,” what you type (title, organization, date, time, place, description, an optional contact email, and, when asked, an Upstate South Carolina area) is saved <strong>on your phone only</strong> and marked “Pending.” It is not emailed or sent anywhere.</li>
           <li><strong>Peer Talk interest:</strong> Peer Talk is “coming soon.” If you fill in the interest form, your topics and the optional name, email, and note you type are saved <strong>on your phone only</strong>. They are not sent to us or anyone else.</li>
         </ul>
+        <p>The in-browser version on this website saves the same kinds of things in your <strong>browser’s local storage</strong> on this device only: your area (state or ZIP, and whether you chose location or typing), items you save (including events), your color theme and light or dark mode, and, if you fill in the Peer Talk interest form, the topics and optional name, email, and note you type. The website does not include the Android app’s “Submit an event” form. None of this is sent to us or to any server we run. Clearing this site’s data in your browser, or using a different browser or device, removes or isolates it.</p>
 
         <h2 id="not-collected">5. Information we don’t collect</h2>
         <ul>
@@ -122,7 +125,7 @@
         <p>Warrior Wayfinder™ connects you to other people’s services. When you use them, their privacy policies apply, not this one.</p>
         <ul>
           <li><strong>Google Play.</strong> You download and update the app through Google Play, which Google runs under its own privacy policy. Android’s location and address lookup services, which may be provided by Google, are part of your phone and are also covered by Google’s policies.</li>
-          <li><strong>GitHub (events and organizations list).</strong> As described in section 2, the app downloads a public file from GitHub. No location, ZIP code, or personal information is sent with that request. GitHub’s privacy statement: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement</a>.</li>
+          <li><strong>GitHub (events and organizations list, and this website).</strong> As described in section 2, the Android app and the in-browser version download a public file from GitHub. This website is also hosted on GitHub Pages. No location, ZIP code, or personal information is sent with the feed request. Visiting the site or the feed lets GitHub see your IP address and basic technical details under its own policy. GitHub’s privacy statement: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement</a>.</li>
           <li><strong>Websites we link to.</strong> The app links to outside websites, such as VA.gov, the Veterans Crisis Line website, veteran organizations, and search tools like the VA facility locator, the VFW post finder, and the American Job Center finder. Some of these links include your ZIP code in the web address so the site opens near you. That ZIP is only shared when you tap the link. Once you leave the app, that website’s privacy policy applies.</li>
           <li><strong>Donation pages.</strong> The “Donate” screen sends you to the websites of South Carolina partner organizations. Your gift goes straight to that organization through its own site. Warrior Wayfinder™ never sees or handles your payment details.</li>
           <li><strong>Crisis line and phone calls.</strong> Buttons that say “Call 988, then press 1” open your phone’s dialer with 988 filled in. The app also shows how to text the Veterans Crisis Line (838255) and links to its website. Calls and texts go through your phone carrier and the crisis line, not through us. The app does not record or report your calls or texts.</li>
@@ -135,12 +138,13 @@
         <h2 id="deletion">8. Keeping and deleting your information</h2>
         <ul>
           <li><strong>On your phone.</strong> Everything listed in section 4 stays on your phone until you change or remove it. You can unsave items, change your area, or switch location off in the app. To erase all of it at once, either uninstall the app, or go to Settings &gt; Apps &gt; Warrior Wayfinder™ &gt; Storage &gt; Clear storage (wording varies by phone).</li>
+          <li><strong>In this browser.</strong> What the website saves in local storage stays in that browser until you change it, unsave items, or clear this site’s data (wording varies by browser). It is not kept in the Android app, and the app’s saved items are not kept in the website.</li>
           <li><strong>On our side.</strong> We don’t run a server and we don’t keep a database of users, so there is no account or profile to delete with us. If you have emailed us, you can ask us to delete that email conversation.</li>
           <li><strong>GitHub.</strong> GitHub keeps its own technical records, such as request logs, under its own policy. Those requests are not tied to your name.</li>
         </ul>
 
         <h2 id="security">9. Security</h2>
-        <p>The events and organizations list is downloaded over an encrypted (HTTPS) connection. What the app saves on your phone is kept in the app’s private storage, which Android keeps separate from other apps. The app does not add its own extra encryption on top of that, so protect your phone with a screen lock. Because we keep almost nothing about you, there is very little that could be exposed on our end. No system is perfectly secure, but we’ve kept things simple on purpose.</p>
+        <p>The events and organizations list is downloaded over an encrypted (HTTPS) connection. What the Android app saves on your phone is kept in the app’s private storage, which Android keeps separate from other apps. What the website saves is kept in your browser’s local storage for this site, which other sites cannot read, but anyone with access to your browser profile on this device might. Neither the app nor the website adds its own extra encryption on top of that, so protect your phone or computer with a screen lock. Because we keep almost nothing about you, there is very little that could be exposed on our end. No system is perfectly secure, but we’ve kept things simple on purpose.</p>
 
         <h2 id="changes">10. Changes to this policy</h2>
         <p>If the app changes how it handles information, we’ll update this policy and the “Effective date” at the top. If a future version would send any new kind of information off your phone, we’ll update this policy before that version is released, and where the law or Google Play requires, ask for your permission first.</p>
